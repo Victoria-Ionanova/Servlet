@@ -41,10 +41,13 @@
         <ul class="nav navbar-nav navbar-right">
             <li><a href="LoginServlet">Login</a></li>
         </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="LogoutServlet">Logout</a></li>
+        </ul>
     </div>
 </nav>
 <div class="container">
-<h2>Welcome ${name}</h2>
+<h2>Welcome ${username} (last login: ${lastdate})</h2>
 <%--<div>
     Your Group is
     ${group}
@@ -75,9 +78,6 @@
         <p> Введите email <input name="nemail" type="text" /> </p>
         <input name="add" type="submit" />
     </form>
-    <ul class="nav navbar-nav navbar-right">
-        <li><a href="LogoutServlet">Logout</a></li>
-    </ul>
 </div>
     <footer class="footer">
         <div class="container">

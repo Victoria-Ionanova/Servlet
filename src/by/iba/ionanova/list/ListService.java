@@ -1,5 +1,7 @@
 package by.iba.ionanova.list;
 
+import by.iba.ionanova.model.Person;
+
 import java.util.ArrayList;
 import java.util.List;
 

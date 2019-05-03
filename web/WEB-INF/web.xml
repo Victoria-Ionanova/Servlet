@@ -5,7 +5,7 @@
          version="4.0">
    <!-- <servlet>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>by.iba.ionanova.LoginServlet</servlet-class>
+        <servlet-class>by.iba.ionanova.servlet.LoginServlet</servlet-class>
     </servlet>-->
 
 </web-app>

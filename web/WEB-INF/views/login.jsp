@@ -27,6 +27,10 @@ My First JSP!!! My name is ${name} and password is ${password}--%>
     </p>
     <input type="submit" />
 </form>
-
+<div>
+    <form action="RegisterServlet" method="GET">
+        <input class ="button-main-page" type="submit" value="Регистрация"/>
+    </form>
+</div>
 </body>
 </html>

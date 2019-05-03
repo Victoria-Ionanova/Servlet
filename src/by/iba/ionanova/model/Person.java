@@ -1,4 +1,4 @@
-package by.iba.ionanova.list;
+package by.iba.ionanova.model;
 
 public class Person {
     private String name;
@@ -14,6 +14,10 @@ public class Person {
         name = person.name;
         phone = person.phone;
         email = person.email;
+    }
+
+    public Person() {
+
     }
 
     public String getName() {

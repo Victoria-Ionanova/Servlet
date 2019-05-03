@@ -1,4 +1,4 @@
-package by.iba.ionanova;
+package by.iba.ionanova.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
