@@ -9,7 +9,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Welcome</title>
+    <title> Title</title>
+    <!-- Bootstrap core CSS -->
     <link href="webjars/bootstrap/4.3.1/css/bootstrap.min.css"
           rel="stylesheet">
     <style>
@@ -30,19 +31,17 @@
 <body>
 <nav role="navigation" class="navbar navbar-default">
     <div class="">
-        <img src =
-                     "https://www.kv.by/sites/default/files/user7743/logo_iba_group.jpg" width="50"
-             height="50">
+        <img src="https://www.kv.by/sites/default/files/user7743/logo_iba_group.jpg" width="50" height="50">
     </div>
     <div class="navbar-collapse">
         <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="LoginServlet">Login</a></li>
+            <li><a href="${pageContext.request.contextPath}/controller?command=login_page">Login</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="LogoutServlet">Logout</a></li>
+            <li><a href="${pageContext.servletContext.contextPath}/controller?command=sign_out">Logout</a></li>
         </ul>
     </div>
 </nav>
@@ -71,14 +70,15 @@
     </c:forEach>
 </table>
     <p><font color="red">${errorMessage}</font></p>
-    <form method="POST" action="GroupServlet">
+    <form method="POST" action="${pageContext.servletContext.contextPath}/controller?command=add_new_person">
         Новый :
         <p> Введите имя <input name="nname" type="text" /> </p>
         <p> Введите телефон <input name="nphone" type="text" /> </p>
         <p> Введите email <input name="nemail" type="text" /> </p>
-        <input name="add" type="submit" />
+        <input name="Добавить" type="submit" />
     </form>
 </div>
+    <p> ${lastdate}</p>
     <footer class="footer">
         <div class="container">
             <p>2019 Все права защищены</p>

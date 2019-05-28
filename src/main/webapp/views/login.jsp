@@ -20,15 +20,16 @@ My First JSP!!! My name is ${name} and password is ${password}--%>
 </form>--%>
 
 <p><font color="red">${errorMessage}</font></p>
-<form action="login" method="POST">
-    <p>  Name     : <input  name="name" type="text" />
+<form action="${pageContext.servletContext.contextPath}/controller?command=login" method="POST">
+    <p> Вход в систему </p>
+    <p> Имя : <input name="loginName" type="text" />
     </p>
-    <p>   Password : <input name="password" type="password" />
+    <p> Пароль : <input name="password" type="password" />
     </p>
-    <input type="submit" />
+    <input class ="button-main-page" type="submit" value="Войти"/>
 </form>
 <div>
-    <form action="RegisterServlet" method="GET">
+    <form action="${pageContext.servletContext.contextPath}/controller?command=registration_page" method="GET">
         <input class ="button-main-page" type="submit" value="Регистрация"/>
     </form>
 </div>

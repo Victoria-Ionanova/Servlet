@@ -12,7 +12,7 @@
 </head>
 <body>
 <p><font color="red">${errorRegister}</font></p>
-<form action="RegisterServlet" method="POST">
+<form action="${pageContext.servletContext.contextPath}/controller?command=register_new_user" method="POST">
     <p> Регистрация нового пользователя </p>
     <p> Введите имя : <input name="newLoginName" type="text" />
     </p>

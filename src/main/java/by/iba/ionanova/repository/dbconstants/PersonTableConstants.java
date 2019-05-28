@@ -2,7 +2,7 @@ package by.iba.ionanova.repository.dbconstants;
 
 public enum PersonTableConstants {
     ID("id"),
-    NAME("namel"),
+    NAME("name"),
     PHONE("phone"),
     EMAIL ("email");
     private String fieldName;
